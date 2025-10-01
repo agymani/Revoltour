@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Revolt Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23FFC300'><polygon points='18,0 12,14 20,14 14,32 20,18 12,18 18,0'/></svg>">
+</head>
+<body>
+    <div style="position: absolute; top: 15px; right: 20px; z-index: 1000;">
+        <a href="inscription_en.html" title="English Version">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 60 30"><clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m-60 0L60 0" stroke="#fff" stroke-width="6" clip-path="url(#a)"/><path d="M0 0l60 30m-60 0L60 0" stroke="#C8102E" stroke-width="4" clip-path="url(#a)"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>
+        </a>
+    </div>
+
+    <header class="main-header">
+        <h1>Revolt Tour</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="programme.html">Programme & Infos</a>
+        <a href="inscription.html" class="active">Inscription</a>
+    </nav>
+
+    <main class="container main-content">
+        <h2>Inscrivez-vous à l'événement</h2>
+        <p>Les places sont limitées. Réservez la vôtre dès aujourd'hui en remplissant le formulaire ci-dessous.</p>
+
+        <div class="form-container">
+            <form action="https://formspree.io/f/xeorgpvq" method="POST">
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="Prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="Nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="entreprise">Entreprise</label>
+                    <input type="text" id="entreprise" name="Entreprise" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="Email" required>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="date_choisie">Choisissez votre date</label>
+                    <select id="date_choisie" name="Date choisie" required>
+                        <option value="">-- Veuillez sélectionner une date --</option>
+                        <option value="17-Décembre-2025">Mercredi 17 Décembre 2025 en Français</option>
+                        <option value="18-Décembre-2025">Jeudi 18 Décembre 2025 en Anglais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Confirmer mon inscription" class="btn">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Revolt Tour - Un événement propulsé par Manitou Group</p>
+    </footer>
+
+</body>
+</html>

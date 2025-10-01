@@ -1,0 +1,191 @@
+/* style.css */
+
+/* Variables de couleurs Manitou */
+:root {
+    --manitou-red: #E4002B;
+    --manitou-dark-gray: #2D2A26;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --white: #FFFFFF;
+}
+
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Conteneur principal pour centrer le contenu */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+/* En-tête (Header) */
+.main-header {
+    background: var(--manitou-dark-gray);
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 5px solid var(--manitou-red);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Barre de navigation */
+.navbar {
+    background: #444;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: var(--manitou-red);
+    border-radius: 5px;
+}
+
+/* Section principale du contenu */
+.main-content {
+    padding: 2rem 0;
+}
+
+.main-content h2 {
+    color: var(--manitou-red);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+/* Section Hero (pour la page d'accueil) */
+.hero {
+    background: url('https://via.placeholder.com/1500x500.png/2D2A26/FFFFFF?text=Image+Batteries+Lithium-Ion') no-repeat center center/cover;
+    height: 50vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: var(--white);
+    border: none;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--manitou-red);
+    color: var(--white);
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Styles pour les informations du programme */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    color: var(--manitou-red);
+    margin-top: 0;
+}
+
+.info-card h4 {
+    color: var(--manitou-red);
+    margin-top: 0;
+}
+
+/* Styles pour le formulaire d'inscription */
+.form-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input[type="submit"] {
+    background: var(--manitou-red);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background: #c30024;
+}
+
+/* Pied de page (Footer) */
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--manitou-dark-gray);
+    color: var(--white);
+    margin-top: 2rem;
+}
